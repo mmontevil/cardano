@@ -40,4 +40,4 @@ Introduction au colloque par [Alain Supiot](https://www.college-de-france.fr/sit
 
 Inscription recommandée auprès de Mme Cécile Alrivie : cecile.alrivie[at]ens.fr.
 
-[![](https://cardano.visions-des-sciences.eu/sites/cardano.visions-des-sciences.eu/files/Affiche_17_12_14_GL.jpeg)](https://cardano.visions-des-sciences.eu/sites/cardano.visions-des-sciences.eu/files/Affiche_17_12_14_GL.pdf)
+[![](/assets/images/img/Affiche_17_12_14_GL.jpeg)](/assets/pdf/Affiche_17_12_14_GL.pdf)
