@@ -8,7 +8,8 @@ module.exports = {
 	 * across the entire site so there is consistency on margins, padding, max width
 	 * at all screen sizes.
 	 */
-	g_pageWidth: 'max-w-screen-xl px-8 md:px-16 lg:px-32',
+	g_pageWidth: 'max-w-md  md:max-w-lg   lg:max-w-xl xl:max-w-2xl 2xl:max-w-4xl  mx-1 sm:mx-auto',
+	g_pageWidth2: '   prose prose-sm sm:prose lg:prose-lg xl:prose-xl  mx-1 sm:mx-auto',
 
 	/**
 	 * Globally disable display of Tag pills/links
@@ -87,7 +88,7 @@ module.exports = {
 	 *        'postListStyle' and 'tagListStyle.'
 	 *
 	 * */
-	postListStyle: 'postslistcards',
+	postListStyle: 'postslistthumbs',
 
 	/**
 	 * ===== Tag List Style Options =====

@@ -4,9 +4,11 @@ const pluginNavigation = require('@11ty/eleventy-navigation')
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 const markdownIt = require('markdown-it')
 const markdownItEmoji = require('markdown-it-emoji')
+const glob = require('fast-glob');
 
 // const collections = require('./utils/collections.js')
 const filters = require('./utils/filters.js')
+
 const shortcodes = require('./utils/shortcodes.js')
 const pairedshortcodes = require('./utils/paired-shortcodes.js')
 const transforms = require('./utils/transforms.js')
@@ -64,6 +66,8 @@ module.exports = function (eleventyConfig) {
 	 */
 	eleventyConfig.addNunjucksAsyncShortcode('svgsprite', svgsprite)
 
+  
+
 	/**
 	 * Collections
 	 * ============================
@@ -75,9 +79,9 @@ module.exports = function (eleventyConfig) {
 	 */
 	eleventyConfig.addCollection('post', (collection) => {
 		if (process.env.ELEVENTY_ENV !== 'production')
-			return [...collection.getFilteredByGlob('./src/posts/*.md')]
+			return [...collection.getFilteredByGlob('./src/posts/*.*')]
 		else
-			return [...collection.getFilteredByGlob('./src/posts/*.md')].filter((post) => !post.data.draft)
+			return [...collection.getFilteredByGlob('./src/posts/*.*')].filter((post) => !post.data.draft)
 	})
 
 	// TAGLIST used from the official eleventy-base-blog  https://github.com/11ty/eleventy-base-blog/blob/master/.eleventy.js
@@ -126,10 +130,13 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy('src/*.png')
 	eleventyConfig.addPassthroughCopy('src/*.jpg')
 	eleventyConfig.addPassthroughCopy('src/*.ico')
+        eleventyConfig.addPassthroughCopy('src/*.pdf')
+
 	eleventyConfig.addPassthroughCopy('src/robots.txt')
 	eleventyConfig.addPassthroughCopy('src/assets/images/')
 	eleventyConfig.addPassthroughCopy('src/assets/svg/')
 	eleventyConfig.addPassthroughCopy('src/assets/video/')
+	eleventyConfig.addPassthroughCopy('src/assets/pdf/')
 
 	/**
 	 * Set custom markdown library instance...
@@ -170,6 +177,7 @@ module.exports = function (eleventyConfig) {
 	 * This so we can have and test a 404 during local dev.
 	 * @link https://www.11ty.dev/docs/config/#override-browsersync-server-options
 	 */
+
 	eleventyConfig.setBrowserSyncConfig({
 		notify: true,
 		snippetOptions: {

@@ -1,8 +1,8 @@
 <div class="absolute flex flex-col items-start justify-center h-full {{ heroSettings.headingTextColor or 'text-white' }} {{ structure.g_pageWidth }}">
-  <div class="text-4xl font-semibold leading-tight {{ heroSettings.headingTextCase }} md:text-6xl">
+  <div class="text-4xl font-semibold leading-tight {{ heroSettings.headingTextCase }} {{ heroSettings.headingTextColor or 'text-white' }} md:text-6xl">
     {{ heroSettings.headingText | safe  }}
   </div>
-  <div class="pt-4 pr-12 text-lg font-light md:text-2xl lg:text-3xl {{ heroSettings.subheadingTextColor }}">
+  <div class="pt-4 pr-12 font-bold  text-xl font-light md:text-3xl lg:text-4xl {{ heroSettings.subheadingTextColor }} {{ heroSettings.headingTextColor or 'text-white' }} ">
     {{ heroSettings.subheadingText | safe }}
   </div>
   {% if heroSettings.buttonText %}

@@ -55,3 +55,8 @@ pre code {
 @tailwind components;
 
 @tailwind utilities;
+
+prose img {
+	@apply p-0 ;
+}
+

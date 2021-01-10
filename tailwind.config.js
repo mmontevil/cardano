@@ -34,8 +34,58 @@ module.exports = {
 				96: '24rem',
 				128: '32rem',
 			}),
-		},
-	},
+                        typography: (theme) => ({ 
+                            DEFAULT: {
+                                css: {
+                                    img: {
+                                        marginTop:  0,
+                                         marginBottom:  0,                                       
+                                    }, 
+                                    "ul > li::before": false,
+                                     "ul > li::before": {content: "", 
+                                         paddingLeft:  0,},     
+                                  "ul > li": {paddingLeft:  0,},  
+                                    "ul > li::after": false,
+                                    a: {
+                                        textDecoration: `underline`,
+                                        "&:hover": {
+                                            color: theme('colors.blue.800'),
+                                            textDecoration: `underline`,
+                                        },
+                                         "&:focus": {
+                                            color: theme('colors.blue.400'),
+                                            textDecoration: `underline`,
+                                        },
+                                    },
+                                },
+                            },
+                             sm: {
+                                css: {
+                                    img: {
+                                        marginTop:  0,
+                                        marginBottom:  0,
+                                    },
+                                }},
+                              lg: {
+                                css: {
+                                    img: {
+                                        marginTop:  0,
+                                        marginBottom:  0,
+                                    },
+                                }},                           
+                               xl: {
+                                css: {
+                                    img: {
+                                        marginTop:  0,
+                                        marginBottom:  0,
+                                    },
+                                }},                               
+                        }),
+                }
+        },
 	variants: {},
-	plugins: [require('@tailwindcss/custom-forms')],
+	plugins: [require('@tailwindcss/custom-forms'),
+            require('@tailwindcss/typography'),
+        ],
+
 }
