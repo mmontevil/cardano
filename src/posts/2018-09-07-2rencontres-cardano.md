@@ -7,10 +7,10 @@ draft: false
 seo:
   title: "Breakthroughs and Blind Spots in the Mathematisation of the Life Sciences"
   description:
-  image: img/sip.png
+  image: img/sip.jpg
 images: # relative to /src/assets/images/
-  feature: img/sip.png
-  thumb: img/sip.png
+  feature: img/sip.jpg
+  thumb: img/sip.jpg
   align: # object-center (default) - other options at https://tailwindcss.com/docs/object-position
   height: # optional. Default = h-48 md:h-1/1
 tags:

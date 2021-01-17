@@ -7,10 +7,10 @@ draft: false
 seo:
   title: "Un dialogue entre méthodes : du physico-mathématiques aux systèmes historiques et du vivant"
   description:
-  image: img/tronde.png
+  image: img/tronde.jpg
 images: # relative to /src/assets/images/
   feature:
-  thumb: img/tronde.png
+  thumb: img/tronde.jpg
   align: # object-center (default) - other options at https://tailwindcss.com/docs/object-position
   height: # optional. Default = h-48 md:h-1/3
 tags:

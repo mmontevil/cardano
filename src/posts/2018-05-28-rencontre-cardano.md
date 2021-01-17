@@ -7,10 +7,10 @@ draft: false
 seo:
   title: "Les mathématiques entre normativité et imagination : Historicité, finance et sémiogenèse"
   description:
-  image: img/math-crise.png
+  image: img/math-crise.jpg
 images: # relative to /src/assets/images/
-  feature: img/math-crise.png
-  thumb: img/math-crise.png
+  feature: img/math-crise.jpg
+  thumb: img/math-crise.jpg
   align: # object-center (default) - other options at https://tailwindcss.com/docs/object-position
   height: # optional. Default = h-64 md:h-1/2
 tags:

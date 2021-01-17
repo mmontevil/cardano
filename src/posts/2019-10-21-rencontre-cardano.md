@@ -7,10 +7,10 @@ draft: false
 seo:
   title: "Croyances et risques dans la pratique des sciences"
   description:
-  image: img/croyance.png
+  image: img/croyance.jpg
 images: # relative to /src/assets/images/
-  feature: img/croyance.png
-  thumb: img/croyance.png
+  feature: img/croyance.jpg
+  thumb: img/croyance.jpg
   align: # object-center (default) - other options at https://tailwindcss.com/docs/object-position
   height: h-48 md:h-1/2
 tags:
