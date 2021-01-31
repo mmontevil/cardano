@@ -8,6 +8,7 @@ const markdownIt = require('markdown-it')
 const markdownItEmoji = require('markdown-it-emoji')
 const glob = require('fast-glob');
 const format = require('date-fns/format')
+const path = require('path')
 
 // const collections = require('./utils/collections.js')
 const filters = require('./utils/filters.js')
@@ -159,6 +160,8 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy('src/assets/video/')
 	eleventyConfig.addPassthroughCopy('src/assets/pdf/')
 
+        
+        
 	/**
 	 * Set custom markdown library instance...
 	 * and support for Emojis in markdown...
@@ -197,8 +200,29 @@ module.exports = function (eleventyConfig) {
 	 * Override BrowserSync Server options
 	 * This so we can have and test a 404 during local dev.
 	 * @link https://www.11ty.dev/docs/config/#override-browsersync-server-options
-	 */
+	 */ 
+ const imagesResponsiverConfig = require(path.join(
+      __dirname,
+      './',
+      'utils/images-responsiver-config.js'
+    ));
+    const imagesResponsiver = require('images-responsiver');
+const unescape = require('html-escaper').unescape;
 
+
+const imagesResponsiverTransform = (content, outputPath) => {
+  if (outputPath && outputPath.endsWith('.html')) {
+    return unescape(imagesResponsiver(content, imagesResponsiverConfig));
+  }
+  return content;
+};
+  eleventyConfig.addTransform(
+      'imagesResponsiver',
+      imagesResponsiverTransform
+    );
+  
+        
+        
 	eleventyConfig.setBrowserSyncConfig({
 		notify: true,
 		snippetOptions: {
