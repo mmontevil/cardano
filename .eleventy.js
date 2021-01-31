@@ -2,6 +2,8 @@ const fs = require('fs')
 const pluginRss = require('@11ty/eleventy-plugin-rss')
 const pluginNavigation = require('@11ty/eleventy-navigation')
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
+const Image = require("@11ty/eleventy-img");
+
 const markdownIt = require('markdown-it')
 const markdownItEmoji = require('markdown-it-emoji')
 const glob = require('fast-glob');
@@ -14,7 +16,23 @@ const shortcodes = require('./utils/shortcodes.js')
 const pairedshortcodes = require('./utils/paired-shortcodes.js')
 const transforms = require('./utils/transforms.js')
 const svgsprite = require('./utils/svgsprite')
+async function imageShortcode(src, alt, sizes) {
+  let metadata = await Image(src, {
+    widths: [300, 600],
+    formats: ["avif", "jpeg"]
+  });
 
+  let imageAttributes = {
+    alt,
+    sizes,
+    loading: "lazy",
+    decoding: "async",
+  };
+
+  // You bet we throw an error on missing alt in `imageAttributes` (alt="" works okay)
+  return Image.generateHTML(metadata, imageAttributes ,{  whitespaceMode: "inline"}); 
+
+}
 module.exports = function (eleventyConfig) {
 	/**
 	 * Plugins
