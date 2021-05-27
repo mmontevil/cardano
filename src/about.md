@@ -19,7 +19,7 @@ Nous nous intéressons à l’émergence historique du sens et à son rôle dans
 
 Nous vous invitons à une demi-journée ouverte à tous, que nous voudrions fondatrice, le 14 décembre 2017 : la discussion s’y organisera à partir de trois exposés. Puis nous proposerons la création de l’association  **Girolamo Cardano** (Jérôme Cardan, 1501-1576 : inventeur des nombres imaginaires, premier penseur de la transformation du vivant dans le temps) à laquelle vous serez invités à participer, si vous le souhaitez.
 
-[Nicolas Bouleau](https://cermics.enpc.fr/~bouleaun/), [Giuseppe Longo](https://www.di.ens.fr/users/longo/), [Maël Montévil](https://montevil.theobio.org), [Alessandro Sarti](https://cams.ehess.fr/alessandro-sarti/)
+[Nicolas Bouleau](https://cermics.enpc.fr/~bouleaun/), [Giuseppe Longo](https://www.di.ens.fr/users/longo/), [Maël Montévil](https://montevil.org), [Alessandro Sarti](https://cams.ehess.fr/alessandro-sarti/)
 
 {% wrap "border-t border-b border-indigo-300 mt-4 "%}
 
