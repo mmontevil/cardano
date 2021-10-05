@@ -7,10 +7,10 @@ draft: false
 seo:
   title: "La nature et ses souvenirs. La révolution combinatoire de la biologie et ses dangers"
   description:
-  image: img/croyance.jpg
+  image: home/cardano.jpg
 images: # relative to /src/assets/images/
-  feature: img/croyance.jpg
-  thumb: img/croyance.jpg
+  feature: home/cardano.jpg
+  thumb: home/cardano.jpg
   align: # object-center (default) - other options at https://tailwindcss.com/docs/object-position
   height: h-48 md:h-1/2
 tags:
