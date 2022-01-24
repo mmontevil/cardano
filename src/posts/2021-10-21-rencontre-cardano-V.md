@@ -15,6 +15,7 @@ images: # relative to /src/assets/images/
   height: h-48 md:h-1/2
 tags:
   - annonce
+  - video
 ---
 ## 5ème Rencontre Cardano
 
