@@ -3,7 +3,6 @@ const pluginRss = require('@11ty/eleventy-plugin-rss')
 const pluginNavigation = require('@11ty/eleventy-navigation')
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 const Image = require("@11ty/eleventy-img");
-
 const markdownIt = require('markdown-it')
 const markdownItEmoji = require('markdown-it-emoji')
 const glob = require('fast-glob');
