@@ -13,10 +13,10 @@ seo:
   title: "Le cauchemar de Prométhée : Les sciences
 et leurs limites"
   description:
-  image: img/cauchemar.png
+  image: img/cauchemar2.png
 images: # relative to /src/assets/images/
-  feature: img/cauchemar.png
-  thumb: img/cauchemar.png
+  feature: img/cauchemar2.png
+  thumb: img/cauchemar2.png
   align: # object-center (default) - other options at https://tailwindcss.com/docs/object-position
   height: h-48 md:h-1/2
 tags:
