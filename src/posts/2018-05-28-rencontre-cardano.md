@@ -15,6 +15,7 @@ images: # relative to /src/assets/images/
   height: # optional. Default = h-64 md:h-1/2
 tags:
   - annonce
+  - video
 ---
 
 **Transitions et crises : mathématiques, finance, écosystèmes**
@@ -28,6 +29,10 @@ Salle CONF IV-E244, deuxième étage à droite_**
 #### **Argumentaire**
 
 Nous vous invitons à une seconde rencontre du groupe Cardano. Dans le contexte de l’anthropocène, il nous semble particulièrement utile d’interroger le rôle des mathématiques. Entre la toxicité propre aux produits chimiques non régulés et l’utilisation des mathématiques dans les marchés financiers, on réfléchira également au rôle de ces dernières pour appréhender la soutenabilité des transitions en cours.
+
+#### **Video**
+
+<video class="video" controls="controls" data-setup="{}" id="my_video_1" preload="auto" tabindex="0" width="630"> <source src="https://www.di.ens.fr/users/longo/files/CardanoVideoEnsMai18.m4v" type="video/mp4"></video>
 
 #### **Programme**
 
